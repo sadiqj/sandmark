@@ -52,7 +52,6 @@ let aux pool =
     ~body:(fun i ->
       if adj.(i).(k) <> None then
         for j = 0 to n-1 do
-          Domain.Sync.poll();
             if adj.(k).(j) <> None
               && (adj.(i).(j) = None
               || (sum adj.(i).(k) adj.(k).(j)) <  adj.(i).(j))

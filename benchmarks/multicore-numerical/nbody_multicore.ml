@@ -26,7 +26,6 @@ let aux_1 bodies dt pool =
       let b = bodies.(i) in
       let vx, vy, vz = ref b.vx, ref b.vy, ref b.vz in
       for j = 0 to Array.length bodies - 1 do
-        Domain.Sync.poll();
         let b' = bodies.(j) in
         if (i!=j) then begin
           let dx = b.x -. b'.x  and dy = b.y -. b'.y  and dz = b.z -. b'.z in
@@ -41,7 +40,6 @@ let aux_1 bodies dt pool =
       b.vy <- !vy;
       b.vz <- !vz);
   for i = 0 to num_bodies - 1 do
-    Domain.Sync.poll();
     let b = bodies.(i) in
     b.x <- b.x +. dt *. b.vx;
     b.y <- b.y +. dt *. b.vy;
