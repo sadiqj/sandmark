@@ -19,7 +19,7 @@
   ],
   "benchmarks": [
     {
-      "executable": "benchmarks/irmin/layers.exe -n 100",
+      "executable": "benchmarks/irmin/layers.exe -n 500",
       "name": "layers",
       "tags": [
         "1s_10s",
@@ -215,7 +215,7 @@
       ],
       "runs": [
         {
-          "params": "21"
+          "params": "26"
         }
       ]
     },
@@ -385,7 +385,7 @@
       ],
       "runs": [
         {
-          "params": "25_000_000"
+          "params": "2_500_000_000"
         }
       ]
     },
@@ -1428,7 +1428,7 @@
       ],
       "runs": [
         {
-          "params": ""
+          "params": "16777216"
         }
       ]
     },
@@ -1481,10 +1481,10 @@
       ],
       "runs": [
         {
-          "params": "10_000 50_000 80 100_000_000"
+          "params": "10_000 50_000 80 10_000_000_000"
         },
         {
-          "params": "10_000 50_000 20 100_000_000"
+          "params": "10_000 50_000 20 10_000_000_000"
         }
       ]
     },
