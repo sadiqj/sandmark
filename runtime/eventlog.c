@@ -234,21 +234,14 @@ static void teardown_eventlog(void)
   }
   if (Caml_state->eventlog_out) {
     fclose(Caml_state->eventlog_out);
+    
     Caml_state->eventlog_out = NULL;
   }
 }
 
 void caml_eventlog_init()
 {
-  char_os *toggle = caml_secure_getenv(T("OCAML_EVENTLOG_ENABLED"));
-
-  if (toggle != NULL) {
-    Caml_state->eventlog_enabled = 1;
-    if (*toggle == 'p')
-      Caml_state->eventlog_paused = 1;
-  };
-
-  if (!Caml_state->eventlog_enabled) return;
+  Caml_state->eventlog_enabled = 1;
 
   Caml_state->eventlog_startup_timestamp = time_counter();
 #ifdef _WIN32
