@@ -1,0 +1,4 @@
+{
+  "url" : "https://github.com/ocaml/ocaml/archive/4.12.tar.gz",
+  "configure" : "--disable-naked-pointers"
+}

@@ -1,0 +1,4 @@
+{
+  "url" : "https://github.com/sadiqj/ocaml/archive/eventring_disabled.tar.gz",
+  "configure" : "--disable-naked-pointers"
+}

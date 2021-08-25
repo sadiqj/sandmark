@@ -1,0 +1,4 @@
+{
+  "url" : "https://github.com/sadiqj/ocaml/archive/default_instrumented.tar.gz",
+  "configure" : "--disable-naked-pointers"
+}

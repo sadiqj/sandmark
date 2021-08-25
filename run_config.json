@@ -501,19 +501,6 @@
       ]
     },
     {
-      "executable": "frama-c",
-      "name": "frama-c",
-      "tags": [
-        "macro_bench"
-      ],
-      "runs": [
-        {
-          "params": "-slevel 1000000000 -no-results -no-val-show-progress benchmarks/frama-c/t.c -val",
-          "short_name": "slevel"
-        }
-      ]
-    },
-    {
       "executable": "benchmarks/bdd/bdd.exe",
       "name": "bdd",
       "tags": [
@@ -523,19 +510,6 @@
       "runs": [
         {
           "params": "26"
-        }
-      ]
-    },
-    {
-      "executable": "js_of_ocaml",
-      "name": "js_of_ocaml",
-      "tags": [
-        "macro_bench"
-      ],
-      "runs": [
-        {
-          "params": "--disable=check-magic-number %{bin:frama-c.byte}",
-          "short_name": "frama-c_byte"
         }
       ]
     },
